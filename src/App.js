@@ -33,9 +33,10 @@ function App() {
   const handleSearch = (e, searchTerm) => {
     e.preventDefault()
     setSearch(searchTerm)
-  }
+  };
+
   return (
-    <div className="App" style={styles}>
+    <div className="App">
       <SearchBar handleSearch={handleSearch} />
       {message}
       <Gallery data={data} />
