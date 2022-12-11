@@ -10,7 +10,7 @@ function Gallery({ data }) {
   })
 
   return (
-    <div style={{backgroundColor:"white",display: "flex",flexWrap: "wrap",justifyContent: "center",alignItems: "center",padding: "20px",marginTop: "20px",}}>
+    <div style={{display: "flex",flexWrap: "wrap",justifyContent: "center",alignItems: "center",padding: "20px",marginTop: "20px",}}>
       {display}
     </div>
   )

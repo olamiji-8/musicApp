@@ -6,15 +6,8 @@ function SearchBar(props) {
   const handleChange = (e) => {
     setSearchTerm(e.target.value)
   }
-  const styles = {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    padding: "20px",
-  }
-  const inputStyles = {
-    padding: "10px",
-  }
+  const styles = {display: "flex",justifyContent: "center",alignItems: "center",padding: "20px",}
+  const inputStyles = {padding: "10px"}
 
   return (
     <form onSubmit={e => props.handleSearch(e, searchTerm)} style={styles}>
