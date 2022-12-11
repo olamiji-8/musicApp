@@ -10,22 +10,7 @@ function App() {
   let [message, setMessage] = useState("Search for songs")
   let [data, setData] = useState([])
 
-  // useEffect(() => {
-  //   let responseClone
-  //   fetch("./data.json")
-  //   .then(response => {
-  //     responseClone = response.clone()
-  //     return response.json()
-  //   })
-  //   .then(data => {
-  //     setData(data.results);
-  //   }, error => {
-  //     console.log(error)
-  //     responseClone.text().then(text => {
-  //       console.log(text)
-  //     })
-  //   })
-  // }, [])
+ 
   const API_URL = "https://itunes.apple.com/search?term="
 
   useEffect(() => {
@@ -67,9 +52,3 @@ function App() {
 
 export default App;
 
-//https://itunes.apple.com/search?term=the%20grateful%20dead
-
-// app.js is the parent component
-// search feature for searching songs
-// grid display a list of songs
-// list each song with a title, artist, album, and duration
