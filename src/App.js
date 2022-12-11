@@ -34,13 +34,6 @@ function App() {
     e.preventDefault()
     setSearch(searchTerm)
   }
-
-  const styles = {
-    background: "linear-gradient(top,rgb(126,198,234)0%,rgb(70,179,234)45%,rgb(3,135,201)100%)" , 
-    textAlign: "center",
-    
-  }
-
   return (
     <div className="App" style={styles}>
       <SearchBar handleSearch={handleSearch} />
